@@ -2,6 +2,9 @@ name: "jaffle_shop_mesh_platform"
 version: "2.1.0"
 config-version: 2
 
+dbt-cloud:
+    project-id: 7219
+    
 profile: "redshift"
 require-dbt-version: ">=1.6.0"
 
