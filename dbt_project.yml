@@ -26,7 +26,6 @@ vars:
 
 seeds:
   jaffle_shop_mesh_platform:
-    jaffle_shop_raw:
       +schema: jaffle_shop_raw
 
 models:
