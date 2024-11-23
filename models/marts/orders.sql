@@ -22,6 +22,7 @@ order_items_summary as (
 
     select
         order_id,
+        ordered_at::date AS order_date,
 
         sum(supply_cost) as order_cost,
         sum(product_price) as order_items_subtotal,
@@ -43,7 +44,7 @@ order_items_summary as (
 
     from order_items
 
-    group by 1
+    group by 1,2
 
 ),
 
@@ -51,6 +52,7 @@ compute_booleans as (
 
     select
         orders.*,
+        order_items_summary.order_date,
 
         order_items_summary.order_cost,
         order_items_summary.order_items_subtotal,
