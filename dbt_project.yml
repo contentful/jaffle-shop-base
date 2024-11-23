@@ -4,7 +4,7 @@ config-version: 2
 
 dbt-cloud:
     project-id: 7219
-    
+
 profile: "redshift"
 require-dbt-version: ">=1.6.0"
 
@@ -28,10 +28,11 @@ seeds:
   jaffle_shop_mesh_platform:
     jaffle_shop_raw:
       +schema: jaffle_shop_raw
-      +enabled: "{{ var('refresh_seeds', False) | as_bool }}"
 
 models:
   jaffle_shop_mesh_platform:
     +materialized: table
+    staging:
+      +schema: staging
     marts:
-      +grants: {select: [cdo_carmi]}
+      +schema: marts

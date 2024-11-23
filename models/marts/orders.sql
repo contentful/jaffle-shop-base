@@ -8,7 +8,7 @@ orders as (
 
 order_items as (
 
-    select * from {{ ref('jaffle_shop_order_items') }}
+    select * from {{ ref('order_items') }}
 
 ),
 
