@@ -34,9 +34,4 @@ models:
     staging:
       +schema: staging
     marts:
-<<<<<<< HEAD
       +schema: marts
-      +grants: {select: [cdo_carmi]}
-=======
-      +schema: marts
->>>>>>> 6723a6f22b419b76bf94b95ff1b0e113dc1e8bdb
