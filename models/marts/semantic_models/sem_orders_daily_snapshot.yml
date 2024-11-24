@@ -69,9 +69,8 @@ semantic_models:
     agg: count
     create_metric: true
     expr: order_id
-  primary_entity: order
 metrics:
-  - name: total_order_cost
+  - name: total_order_cost_metric
     description: The total cost of orders.
     type: simple
     label: Total Amount
