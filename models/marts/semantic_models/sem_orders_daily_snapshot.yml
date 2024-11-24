@@ -70,3 +70,10 @@ semantic_models:
     create_metric: true
     expr: order_id
   primary_entity: order
+metrics:
+  - name: total_order_cost
+    description: The total cost of orders.
+    type: simple
+    label: Total Amount
+    type_params:
+      measure: total_order_cost
