@@ -12,12 +12,6 @@ order_items as (
 
 ),
 
-leaving_this_here_accidentally as (
-
-    select * from {{ ref('stg_customers') }}
-
-),
-
 order_items_summary as (
 
     select
