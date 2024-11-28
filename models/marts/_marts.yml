@@ -44,3 +44,18 @@ models:
         description: Indicates whether the order contains any food items.
       - name: is_drink_order
         description: Indicates whether the order contains any drink items.
+  
+  - name: customers
+    description: This model consolidates customer information with their order statistics, providing a comprehensive view of each customer's total order count and total order amount.
+    columns:
+      - name: customer_id
+        description: A unique identifier for each customer.
+        tests:
+          - unique
+          - not_null
+      - name: customer_name
+        description: The name of the customer.
+      - name: total_order_count
+        description: The total number of distinct orders placed by the customer.
+      - name: total_order_amount
+        description: The total monetary value of all orders placed by the customer.
