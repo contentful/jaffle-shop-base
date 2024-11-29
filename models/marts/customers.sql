@@ -23,3 +23,4 @@ select
     total_order_amount
 from customer_data
 left join orders on customer_data.customer_id = orders.customer_id
+where total_order_amount >2 
