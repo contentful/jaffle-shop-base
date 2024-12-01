@@ -72,8 +72,8 @@ exposures:
 
     depends_on:
       - ref('orders_daily_snapshot')
-      - metric('count_food_items')
-      - metric('count_drink_items')
+      - metric('total_count_food_items')
+      - metric('total_count_drink_items')
       - metric('total_order_cost')
 
     owner:
