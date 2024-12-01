@@ -59,6 +59,8 @@ models:
         description: The total number of distinct orders placed by the customer.
       - name: total_order_amount
         description: The total monetary value of all orders placed by the customer.
+      - name: is_top_customer
+        description: Customer who has more than 5 orders and with more than total of 100$ spent
 
 exposures:
 
