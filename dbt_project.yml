@@ -30,6 +30,7 @@ seeds:
 
 models:
   jaffle_shop_mesh_platform:
+    +access: public 
     +materialized: table
     staging:
       +schema: staging
