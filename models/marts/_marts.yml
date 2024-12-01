@@ -59,3 +59,23 @@ models:
         description: The total number of distinct orders placed by the customer.
       - name: total_order_amount
         description: The total monetary value of all orders placed by the customer.
+
+exposures:
+
+  - name: my_first_dashboard
+    label: First Dashboard
+    type: dashboard
+    maturity: low
+    url: https://prod-useast-b.online.tableau.com/#/site/contentful/workbooks/2245081/views
+    description: >
+      Did someone say "exponential growth"?
+
+    depends_on:
+      - ref('orders_daily_snapshot')
+      - metric('total_count_food_items')
+      - metric('total_count_drink_items')
+      - metric('total_order_cost')
+
+    owner:
+      name: Katya
+      email: katya@jaffleshop.com
