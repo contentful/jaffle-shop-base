@@ -1,4 +1,4 @@
-name: "jaffle_shop_mesh_platform"
+name: jaffle_shop_mesh_platform
 version: "2.1.0"
 config-version: 2
 
@@ -30,6 +30,7 @@ seeds:
 
 models:
   jaffle_shop_mesh_platform:
+    +access: public 
     +materialized: table
     staging:
       +schema: staging

@@ -68,3 +68,6 @@ Once your project is set up, use the following steps to get the project ready fo
 [^3]: This will activate the virtual environment you just created. It's a long story, but because `task` runs commands in a subshell, we need to activate the virtual environment in the main shell manually so we can't put this in a task, sorry!
 [^4]: This will reload your shell and ensure the new dependencies are available.
 [^5]: This will run a `dbt seed` then `mv jaffle-data jaffle-data-loaded`, moving the sample data out of the `seed-path` now that it's loaded into your raw schema. The raw schema is meant to be accessed by all developers and production jobs as a raw database would, so once you've `dbt seed`'d it, you don't need it again, but we'll keep it around in the `jaffle-data-loaded` folder just in case. Should you ever need to load it again just ensure you've dropped the raw schema and `mv jaffle-data-loaded jaffle-data` and then `dbt seed` again.
+
+
+Test
