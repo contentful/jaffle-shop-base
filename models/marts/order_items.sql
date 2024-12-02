@@ -51,7 +51,7 @@ joined as (
         products.is_drink_item,
 
         order_supplies_summary.supply_cost, 
-        if max(product_price) over(partition by product_id) = product_price then true else false end as is_most_expensive_product
+        case when max(product_price) over(partition by order_items.product_id) = product_price then true else false end as is_most_expensive_product
 
     from order_items
 
