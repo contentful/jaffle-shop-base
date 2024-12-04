@@ -19,7 +19,7 @@ models:
         data_type: text
       - name: order_total
         data_type: decimal(10, 2)
-      - name: order_subtotal
+      - name: subtotal
         data_type: decimal(10, 2)
         description: The subtotal amount of the order excluding tax.
       - name: tax_paid
