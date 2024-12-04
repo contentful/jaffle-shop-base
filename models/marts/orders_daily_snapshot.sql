@@ -18,7 +18,6 @@ order_daily as (
         date_day,
         coalesce(orders.order_cost) as order_cost,
         coalesce(order_items_subtotal) as order_items_subtotal,
-        coalesce(orders.count_food_items) as count_food_items,
         coalesce(orders.count_drink_items) as count_drink_items,
         coalesce(orders.count_order_items) as count_order_items,
         coalesce(orders.food_order_items_subtotal) as food_order_items_subtotal,
