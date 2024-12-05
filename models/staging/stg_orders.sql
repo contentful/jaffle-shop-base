@@ -19,7 +19,7 @@ renamed as (
         customer as customer_id,
 
         ---------- numerics
-        (subtotal / 100.0) as order_subtotal,
+        (subtotal/100.0) as order_subtotal,
         (order_total / 100.0) as order_total,
         (tax_paid / 100.0) as tax_paid,
 
