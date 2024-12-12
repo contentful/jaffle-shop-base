@@ -1,0 +1,8 @@
+models:
+  - name: agg_product_sold
+    description: Count orders per product
+    columns:
+      - name: product_id
+        description: The unique identifier for each product.
+      - name: count_orders
+        description: count orders per product
